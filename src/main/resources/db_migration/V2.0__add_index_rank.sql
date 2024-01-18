@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS idx_rank ON public.ranking_movies (rank);

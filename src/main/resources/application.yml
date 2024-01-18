@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/ms_lexorank
+    username: sqladmin
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: postgresql
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      data-locations: classpath:data.sql
+      mode: always
